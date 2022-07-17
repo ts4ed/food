@@ -1,8 +1,8 @@
-import { Img, Container } from './ShopList.styled';
+import { Img, Container, Item } from './ShopList.styled';
 
 export default function ShopList({ food, addToCart }) {
   return food.map(f => (
-    <li key={f.id}>
+    <Item key={f.id}>
       <Img src={f.image} alt={f.title} />
       <Container>
         <h3>{f.title}</h3>
@@ -12,6 +12,6 @@ export default function ShopList({ food, addToCart }) {
           Add to Cart
         </button>
       </Container>
-    </li>
+    </Item>
   ));
 }

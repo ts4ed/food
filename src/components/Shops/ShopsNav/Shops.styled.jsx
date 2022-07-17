@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
-export const Container = styled.div``;
+// export const Container = styled.div`
+//   width: 1200px;
+// `;
 
 export const ShopsList = styled.div`
   display: flex;
@@ -33,7 +35,8 @@ export const ItemList = styled.ul`
 
 export const Item = styled.h3`
   margin: 0;
-  padding: 0;
+  padding: 4px;
   color: black;
   font-size: 20px;
+  border: 1px solid black;
 `;

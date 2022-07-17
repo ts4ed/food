@@ -12,4 +12,7 @@ export const Nav = styled.nav`
 export const Links = styled.span`
   font-size: 25px;
   color: #fdfdfd;
+  padding: 4px;
+  font-size: 20px;
+  border: 1px solid #fdfdfd;
 `;

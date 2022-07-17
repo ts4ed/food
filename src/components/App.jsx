@@ -12,6 +12,7 @@ import KFC from 'components/Shops/KFC/KFC';
 import EasyShop from 'components/Shops/EasyShop/EasyShop';
 import { useLocalStorage } from 'hooks/useLocalStorage';
 import { Nav, Links } from './App.styled';
+import s from './styles.module.css';
 
 export default function App() {
   const [totalPrice, setTotalPrice] = useState(0);
@@ -97,10 +98,10 @@ export default function App() {
     <div>
       <header>
         <Nav>
-          <Link to="/shops">
+          <Link to="/shops" className={s.link}>
             <Links>Shops</Links>
           </Link>
-          <Link to="/order">
+          <Link to="/order" className={s.link}>
             <Links>Order</Links>
           </Link>
         </Nav>
