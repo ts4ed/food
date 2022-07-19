@@ -40,17 +40,17 @@ export default function App() {
   }, []);
 
   const addToCart = item => {
-    const isItem = cart.find(c => c.id === item.id);
+    const isItem = cart.find(c => c.id === item._id);
     if (isItem) {
-      increment(item.id);
+      increment(item._id);
       toast.success(`Item added`);
       return;
     }
     setCart([
       {
-        id: item.id,
+        id: item._id,
         title: item.title,
-        image: item.image,
+        picture: item.picture,
         price: item.price,
         count: 1,
       },
