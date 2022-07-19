@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Img = styled.img`
-  width: 350px;
+  width: 360px;
+  height: 360px;
 `;
 export const Container = styled.div`
   display: flex;

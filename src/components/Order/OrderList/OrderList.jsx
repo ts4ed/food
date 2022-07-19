@@ -8,7 +8,10 @@ export default function OrderList({
 }) {
   return cart.map(c => (
     <li key={c.id}>
-      <Img src={`http://localhost:5000/${c.picture}`} alt={c.title} />
+      <Img
+        src={`https://my-project100.herokuapp.com/${c.picture}`}
+        alt={c.title}
+      />
       <div>
         <Container>
           <h3>{c.title}</h3>
